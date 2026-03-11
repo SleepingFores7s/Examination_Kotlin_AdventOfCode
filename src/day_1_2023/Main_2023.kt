@@ -8,17 +8,15 @@ fun main() {
 
     val bigData: List<String> = readFileData()
 
-    //Task A
-    /*
+    //todo Task A --------------------------------------------------------
     var sumOfAll_A:Int = 0
 
     for (data in bigData) {
         sumOfAll_A += filterOutNumber(data)
     }
     println("Sum of task A numbers: $sumOfAll_A")
-    */
 
-    //Task B
+    //todo Task B --------------------------------------------------------
     var sumOfAll_B: Int = 0
 
     for (data in bigData) {
