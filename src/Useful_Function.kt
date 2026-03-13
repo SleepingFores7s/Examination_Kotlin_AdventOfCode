@@ -4,24 +4,24 @@ fun main() {
 
 fun floorModShow() {
 
-    var moveAmount:Int = 50
-    println("Move 50: " + Math.floorMod(moveAmount, 100)) //50 (0 + 50)
+    var moveAmount:Int = 0
+    println("Move 50: " + Math.floorMod(moveAmount, 100)) //50 (0 + 50) (0-100)
 
     moveAmount = 150
-    println("Move 150: " + Math.floorMod(moveAmount, 100)) //50 (0 + 150)
+    println("Move 150: " + Math.floorMod(moveAmount, 100)) //50 (0 + 150) (0-100)
 
     moveAmount = 125
-    println("Move 125: " + Math.floorMod(moveAmount, 100)) //125 (0 + 125)
+    println("Move 125: " + Math.floorMod(moveAmount, 100)) //125 (0 + 125) (0-100)
 
     var startLocation:Int = 50
     moveAmount = 50
-    println("Start 50, Move 50: " + Math.floorMod(startLocation + moveAmount, 100)) //100 (50 + 50)
+    println("Start 50, Move 50: " + Math.floorMod(startLocation + moveAmount, 100)) //100 (50 + 50) (0-100)
 
     startLocation = 25
     moveAmount = 50
-    println("Start 25, Move 50: " + Math.floorMod(startLocation + moveAmount, 100)) //75 (25 + 50)
+    println("Start 25, Move 50: " + Math.floorMod(startLocation + moveAmount, 100)) //75 (25 + 50) (0-100)
 
     startLocation = 50
     moveAmount = 300
-    println("Start 50, Move 300: " + Math.floorMod(startLocation + moveAmount, 100)) //50 (50 + 300)
+    println("Start 50, Move 300: " + Math.floorMod(startLocation + moveAmount, 100)) //50 (50 + 300) (0-100)
 }
