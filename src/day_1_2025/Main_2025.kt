@@ -72,6 +72,7 @@ fun readFileData(): List<String> {
     return File("src/day_1_2025/inputData.txt").readLines()
 }
 
+//todo Task A --------------------------------------------------------
 fun combinationTurn(stringToSplit: String): Pair<Char, Int> {
 
     val splitStringDirection = stringToSplit[0]
@@ -80,6 +81,7 @@ fun combinationTurn(stringToSplit: String): Pair<Char, Int> {
     return Pair(splitStringDirection, splitStringAmount)
 }
 
+//todo Task B --------------------------------------------------------
 fun calculateCurrentLocation(currentLocation: Int, moveDirection: Char, moveAmount: Int): Int {
 
     val movement = if (moveDirection == 'L') {
