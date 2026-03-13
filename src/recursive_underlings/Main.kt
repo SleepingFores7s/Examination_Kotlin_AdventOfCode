@@ -78,7 +78,7 @@ fun main() {
         print("Name: ")
         val inputName: String = readln()
 
-        var list: MutableList<String> = mutableListOf()
+        val list: MutableList<String> = mutableListOf()
         println(Tomteland().getUnderlings(inputName, list))
 
     }
