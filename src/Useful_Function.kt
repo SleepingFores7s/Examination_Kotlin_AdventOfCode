@@ -1,15 +1,4 @@
 fun main() {
-
-//    val value = listOf("Hanna", "Johanna", "Lisa")
-//
-//    println(value[1]) //Johanna
-//    println(value[0]) //Hanna
-//    println(value[2]) //Lisa
-//
-//    val name:String = "Erika"
-//    println(name[4]) // k
-//    println(name[1]) // r
-
     floorModShow()
 }
 
