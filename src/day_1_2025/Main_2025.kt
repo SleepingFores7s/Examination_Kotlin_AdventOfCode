@@ -2,6 +2,13 @@ package day_1_2025
 
 import java.io.File
 
+/*
+Advent of Code - 2024 Day 1
+
+A: Check how many times currentLocation stops at zero
+B: Check how many times currentLocation points/passes zero
+*/
+
 fun main() {
 
     val startLocation: Int = 50

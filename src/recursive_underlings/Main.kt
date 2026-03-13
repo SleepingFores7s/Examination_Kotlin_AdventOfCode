@@ -25,6 +25,11 @@ För att bli godkänd på uppgiften måste du använda rekursion.
  */
 class Tomteland {
 
+    /*
+    List of underlings using mapOf(String, List<String>)
+    String: Överordnandes namn
+    List<String>: Underordnades namn
+    */
     val treeList = mapOf(
         "Tomten" to listOf("Glader", "Butter"),
         "Glader" to listOf("Tröger", "Trötter", "Blyger"),
@@ -40,36 +45,41 @@ class Tomteland {
     //res är listan som håller alla underlydande
     fun getUnderlings(currentName: String, res: MutableList<String>): List<String> {
 
-        //Checks if current name have any Underlings
-        val currentUnderlings = treeList[currentName] ?: emptyList()
+        val currentUnderlings = treeList[currentName] ?: emptyList() //Checks if current name have any Underlings
 //        val currentUnderlings = if (treeList[currentName] == null) {
 //            emptyList()
 //        } else {
 //            treeList[currentName]
 //        }
 
-        //Adds all underlings from current key/Name
-        res.addAll(currentUnderlings)
+        res.addAll(currentUnderlings) //Adds all underlings from current key/Name
 
-        //Goes another step, and checks if the current underlings have any underlings to add.
-        //If list is empty, then the for runs 0 times, because there is 0 elements.
+        /*
+        Goes another step, and checks if the current underlings have any underlings to add.
+        If list is empty, then the for runs 0 times, because there is 0 elements.
+        */
         for (underlingsUnderling in currentUnderlings) {
             getUnderlings(underlingsUnderling, res)
         }
 
-        //Returns completed list of all collected underlings
-        return res
+        return res //Returns completed list of all collected underlings
 
     }
+}
 
-    fun main() {
+fun main() {
 
-        //Exempel på anrop till den rekursiva funktionen getUnderlings,
-        // här är tanken att hitta Tröger underlydande
-        //listan fylls på successivt när vi rekurserar
+    //Exempel på anrop till den rekursiva funktionen getUnderlings,
+    // här är tanken att hitta Tröger underlydande
+    //listan fylls på successivt när vi rekurserar
+
+    while (true) {
+
+        print("Name: ")
+        val inputName: String = readln()
 
         var list: MutableList<String> = mutableListOf()
-        println(getUnderlings("Tröger", list))
+        println(Tomteland().getUnderlings(inputName, list))
 
     }
 }

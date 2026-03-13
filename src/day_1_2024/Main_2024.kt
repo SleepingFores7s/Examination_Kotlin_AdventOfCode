@@ -2,6 +2,13 @@ package day_1_2024
 
 import java.io.File
 
+/*
+Advent of Code - 2024 Day 1
+
+A: Pair lowest digit from each list, then second lowest, and on and on, then sum everything together.
+B: For each number in left list, check how many times that digit appears and multiply left number by result.
+*/
+
 fun main() {
 
     val bigData = readFileData()

@@ -2,7 +2,12 @@ package day_1_2023
 
 import java.io.File
 
-/* Advent of Code - 2023 Day 1a*/
+/*
+Advent of Code - 2023 Day 1
+
+A: Grab first & last digit, put them together, then add every numbe together
+B: Grab first & last digit/word, put them together, then add every numbe together
+*/
 
 fun main() {
 
