@@ -48,7 +48,6 @@ fun filterOutNumber(stringToFilter: String): Int {
             firstValue = stringToFilter[i].digitToInt()
             break
         }
-
         i++
     }
 
@@ -61,7 +60,6 @@ fun filterOutNumber(stringToFilter: String): Int {
         }
         i--
     }
-
     return (firstValue * 10 + secondValue)
 }
 
@@ -108,7 +106,6 @@ fun filterOutTextNumber(stringToFilter: String): Int {
         }
         if (secondValue != 0) break
     }
-
     return (firstValue * 10 + secondValue)
 }
 

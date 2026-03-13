@@ -68,13 +68,7 @@ fun convertListToInts(data: String): Pair<Int, Int> {
 }
 
 fun evaluateDistanceBetweenPairs(data1: Int, data2: Int): Int {
-
-    if (data1 >= data2) {
-        return (data1 - data2)
-    } else {
-        return (data2 - data1)
-    }
-
+    return if (data1 >= data2) (data1 - data2) else (data2 - data1)
 }
 
 //todo Task B --------------------------------------------------------
