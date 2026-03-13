@@ -1,6 +1,5 @@
 package recursive_underlings
 
-import kotlin.collections.emptyList
 
 /*
 Tomtarna på Nordpolen har en strikt chefs-hierarki
