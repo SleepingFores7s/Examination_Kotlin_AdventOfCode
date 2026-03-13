@@ -9,6 +9,8 @@ A: Check how many times currentLocation stops at zero
 B: Check how many times currentLocation points/passes zero
 */
 
+/*Find combination in a 0-99 combination turn lock*/
+
 fun main() {
 
     val startLocation: Int = 50
